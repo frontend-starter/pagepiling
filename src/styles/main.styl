@@ -1,0 +1,88 @@
+@import 'nib'
+@import 'variables'
+
+global-reset()
+
+body
+  font-family 'Lato', Calibri, Arial, sans-serif
+  color #f2f2f2
+
+h1
+  font-size 6em
+  margin-bottom 20px
+
+p
+  font-size 2em
+
+.section
+  text-align center
+
+#menu
+  position fixed
+  top 0
+  left 0
+  height 40px
+  z-index 70
+  width 100%
+  padding 0
+  margin 0
+  li
+    display inline-block
+    margin 10px
+    color #000
+    background rgba(255,255,255, 0.5)
+    -webkit-border-radius 10px
+    border-radius 10px
+    &.active
+      background rgba(0,0,0, 0.5)
+      color #fff
+      a
+        color #fff
+        &:hover
+          color #000
+    a
+      text-decoration none
+      color #000
+    &:hover
+      background rgba(255,255,255, 0.8)
+
+#menu li a,
+#menu li.active a
+  padding 9px 18px
+  display block
+
+.intro
+  p
+    width 50%
+    margin 0 auto
+    font-size 1.5em
+
+#section1
+  h1
+    color #444
+  p
+    color rgba(0,0,0,0.3)
+
+#section2 h1,
+#section2 p
+  z-index 3
+
+#section2
+  p
+    opacity 0.8
+
+#section3
+  p
+    color #757575
+
+#section4
+  p
+    opacity 0.6
+
+#pp-nav
+  &.custom
+    .pp-tooltip
+      color #AAA
+
+
+
